@@ -48,8 +48,6 @@ def upload_file_and_get_link(file_path:str, password=None):
                         break
                 if all_complete:
                     break
-
-            #パスワード指定部(動作しない)
             print("zipにしています")
             password_field = driver.find_element(By.ID,"zip_dlkey")
             password_field.send_keys(password)
